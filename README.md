@@ -36,7 +36,7 @@ You can actually read the code and understand what's happening. Try doing that w
 
 Clone it:
 ```bash
-git clone https://github.com/yourusername/neuralforge.git
+git clone https://github.com/Cobkgukgg/neuralforge.git
 cd neuralforge
 pip install -r requirements.txt
 ```
