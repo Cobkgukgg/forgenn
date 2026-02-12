@@ -42,7 +42,7 @@ pip install forgenn
 
 ### Or install from source
 ```bash
-git clone https://github.com/yourusername/forgenn.git
+git clone https://github.com/Cobkgukgg/forgenn.git
 cd forgenn
 pip install -e .
 ```
