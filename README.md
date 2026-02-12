@@ -1,7 +1,8 @@
-# NeuralForge
+# ForgeNN
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
+![PyPI](https://img.shields.io/badge/pip-install%20forgenn-blue)
 
 **Modern neural network framework built from scratch with NumPy**
 
@@ -34,11 +35,16 @@ You can actually read the code and understand what's happening. Try doing that w
 
 ## Setup
 
-Clone it:
+### Install from PyPI (recommended)
 ```bash
-git clone https://github.com/Cobkgukgg/neuralforge.git
-cd neuralforge
-pip install -r requirements.txt
+pip install forgenn
+```
+
+### Or install from source
+```bash
+git clone https://github.com/yourusername/forgenn.git
+cd forgenn
+pip install -e .
 ```
 
 That's it. Seriously, just NumPy.
@@ -52,7 +58,7 @@ numpy>=1.19.0
 Build a network in like 10 lines:
 
 ```python
-from neuralforge import NeuralNetwork, Dense, TrainingConfig
+from forgenn import NeuralNetwork, Dense, TrainingConfig
 import numpy as np
 
 # some random data
@@ -78,7 +84,7 @@ predictions = model.predict(X[:5])
 I already made some common architectures:
 
 ```python
-from neuralforge import Architectures
+from forgenn import Architectures
 
 # ResNet for when you need to go deep
 model = Architectures.resnet(
@@ -102,7 +108,7 @@ model = Architectures.transformer_encoder(
 You can tweak things:
 
 ```python
-from neuralforge import TrainingConfig
+from forgenn import TrainingConfig
 
 config = TrainingConfig(
     learning_rate=0.001,      # standard
@@ -186,7 +192,7 @@ model.summary()
 
 ```python
 import numpy as np
-from neuralforge import Architectures, TrainingConfig
+from forgenn import Architectures, TrainingConfig
 
 # flatten those images
 X_train = train_images.reshape(-1, 784) / 255.0
@@ -221,7 +227,7 @@ print(f"Accuracy: {results['accuracy']:.4f}")
 Mix and match whatever you want:
 
 ```python
-from neuralforge import NeuralNetwork, Dense, ResidualBlock, LayerNormalization
+from forgenn import NeuralNetwork, Dense, ResidualBlock, LayerNormalization
 
 model = NeuralNetwork("MyCustomNet")
 
