@@ -1,8 +1,10 @@
 # ForgeNN
 
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![PyPI](https://img.shields.io/pypi/v/forgenn-ml)
 ![Downloads](https://img.shields.io/pypi/dm/forgenn-ml)
-![Python](https://img.shields.io/pypi/pyversions/forgenn-ml)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 **Modern neural network framework built from scratch with NumPy**
 
